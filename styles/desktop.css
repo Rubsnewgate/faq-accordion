@@ -65,7 +65,7 @@ body {
   cursor: pointer;
 }
 
-.questions-info[open] div {
+.questions-info[open] .icon {
   background-image: url(../assets/icons/icon-minus.svg);
 }
 
@@ -80,7 +80,7 @@ body {
   color: hsl(292, 42%, 14%);
   transition: color 400ms;
 }
-.question div {
+.question .icon {
   width: 30px;
   height: 30px;
   background-image: url(../assets/icons/icon-plus.svg);

@@ -34,7 +34,7 @@ body {
 .question {
   font-size: 1.6rem;
 }
-.question div {
+.question .icon {
   width: 30px;
   height: 30px;
 }

@@ -36,7 +36,7 @@
 	}
 }
 .questions-info[open] {
-	div {
+	.icon {
 		background-image: url(../assets/icons/icon-minus.svg);
 	}
 }
@@ -47,7 +47,7 @@
 	font-weight: $md;
 	color: $dark-purple;
 	transition: color 400ms;
-	div {
+	.icon {
 		width: 30px;
 		height: 30px;
 		background-image: url(../assets/icons/icon-plus.svg);
