@@ -1,0 +1,60 @@
+@use './guide.sass'
+
+// Main Container
+.main-wrapper
+	display: grid
+	grid-template-rows: 1fr 3fr
+	width: 600px
+	height: auto
+	padding: 25px
+	background-color: guide.$white
+	border-radius: 20px
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2)
+
+// Faqs Title Section
+.faqs-heading__title
+	@include guide.flexbox(row, space-between)
+	width: 160px
+	h1
+		font-size: guide.$xlg-size
+		font-weight: guide.$bold
+		color: guide.$dark-purple
+
+// Faqs Questions Section
+.questions__container
+	@include guide.flexbox(column, space-around, start)
+	height: 100%
+
+.questions-info
+	width: 100%
+	border-bottom: 2px solid guide.$light-pink
+	&:hover
+		cursor: pointer
+
+.questions-info[open]
+	.icon
+		background-image: url(../assets/icons/icon-minus.svg)
+
+.question
+	@include guide.flexbox(row, space-between, center)
+	padding-bottom: 5px
+	font-size: guide.$md-size
+	font-weight: guide.$md
+	color: guide.$dark-purple
+	transition: color 400ms
+	.icon
+		width: 30px
+		height: 30px
+		background-image: url(../assets/icons/icon-plus.svg)
+		background-repeat: no-repeat
+
+	p
+		margin: 0
+		width: 95%
+	&:hover
+		color: guide.$purple
+
+.answer--open
+	font-size: guide.$sm-size
+	font-weight: guide.$light
+	color: guide.$grayish-purple
